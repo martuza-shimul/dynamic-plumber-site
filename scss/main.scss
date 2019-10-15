@@ -2,6 +2,7 @@
 @import "header";
 @import "hero";
 @import "services";
+@import "about";
 @import "media";
 @import "animations";
 
@@ -17,6 +18,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.owl-carousel{
+    z-index: 0;
+}
 // .container{
 //     width: 80%;
 //     margin: 2rem auto;

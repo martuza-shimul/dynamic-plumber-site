@@ -1,4 +1,26 @@
 .services {
+  // padding: 10vh 0;
+  background: aliceblue;
+
+  .heading {
+    // background: coral;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 45%;
+      bottom: 0;
+      border-bottom: 5px solid #000;
+      width: 10%;
+    }
+  }
   .new-item {
     box-sizing: border-box;
     // display: grid;
@@ -8,15 +30,14 @@
     // align-items: stretch;
     // grid-template-columns: 1fr;
     // grid-template-rows: 1fr 1fr;
-    // grid-template-areas: 
+    // grid-template-areas:
     // "image"
     // "para";
 
     p {
-      padding: 30px 10px;
-      font-size: 1.5rem;
+      padding: 20px 10px;
+      font-size: 1.35rem;
       font-weight: 500;
     }
   }
- 
 }
