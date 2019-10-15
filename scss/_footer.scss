@@ -1,12 +1,11 @@
-.footer{
+.footer {
+  padding: 1vh;
+  color: #fff;
+  display: grid;
 
-    padding: 1vh;
-    color: #fff;
-    display: grid;
-    
-    p{
-        align-self: center;
-        justify-self: center;
-        font-size: 0.8rem;
-    }
+  p {
+    align-self: center;
+    justify-self: center;
+    font-size: 0.8rem;
+  }
 }
