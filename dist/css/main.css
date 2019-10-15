@@ -189,29 +189,6 @@
   background: aliceblue;
 }
 
-.services .heading {
-  padding: 1rem;
-  position: relative;
-  margin-bottom: 50px;
-  font-size: 4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.services .heading::after {
-  content: "";
-  position: absolute;
-  left: 45%;
-  bottom: 0;
-  border-bottom: 5px solid #000;
-  width: 10%;
-}
-
-.services .new-item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .services .new-item p {
   padding: 20px 10px;
   font-size: 1.35rem;
@@ -264,7 +241,7 @@
 }
 
 .pricing .price-content-wrapper {
-  padding: 10vh 0;
+  padding: 10vh 2vh;
   display: -ms-grid;
   display: grid;
   -ms-flex-pack: distribute;
@@ -318,6 +295,45 @@
 
 .pricing .price-content-wrapper .content ul li .rate {
   color: #00796B;
+}
+
+.contact {
+  padding: 5vh 0;
+}
+
+.contact .contact-content-wrapper {
+  background: #00796B;
+  padding: 5vh;
+}
+
+.contact .contact-content-wrapper .heading {
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.contact .contact-content-wrapper .heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 5px solid #fff;
+  width: 40%;
+}
+
+.contact .contact-content-wrapper .heading h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact .contact-content-wrapper .content p {
+  color: #fff;
+}
+
+.contact .form-wrapper {
+  padding: 5vh;
 }
 
 @media screen and (max-width: 767px) {
@@ -445,6 +461,24 @@
     font-size: 2rem;
   }
   .about .about-content-wrapper .heading h1 {
+    font-size: 2rem;
+  }
+  .pricing .price-content-wrapper {
+    padding: 10vh 5vh;
+  }
+  .pricing .price-content-wrapper .heading h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .pricing .price-content-wrapper .content ul li span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .pricing .price-content-wrapper .content ul li i {
+    color: #00796B;
+    font-size: 30px;
+  }
+  .contact .contact-content-wrapper .heading h1 {
     font-size: 2rem;
   }
 }
@@ -650,6 +684,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
 }
 
 .owl-carousel {

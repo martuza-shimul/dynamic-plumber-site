@@ -2,27 +2,27 @@
   // padding: 10vh 0;
   background: aliceblue;
 
-  .heading {
-    // background: coral;
-    padding: 1rem;
-    position: relative;
-    margin-bottom: 50px;
-    font-size: 4rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  // .heading {
+  //   // background: coral;
+  //   padding: 1rem;
+  //   position: relative;
+  //   margin-bottom: 50px;
+  //   font-size: 4rem;
+  //   font-weight: 700;
+  //   text-transform: uppercase;
 
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 45%;
-      bottom: 0;
-      border-bottom: 5px solid #000;
-      width: 10%;
-    }
-  }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     left: 45%;
+  //     bottom: 0;
+  //     border-bottom: 5px solid #000;
+  //     width: 10%;
+  //   }
+  // }
   .new-item {
-    box-sizing: border-box;
+    // box-sizing: border-box;
     // display: grid;
     // justify-content: stretch;
     // align-content: stretch;

@@ -121,4 +121,47 @@
       }
     }
   }
+
+  .pricing{
+    .price-content-wrapper{
+      padding: 10vh 5vh;
+
+      .heading {
+
+        h1{
+          font-size: 2rem;
+          text-align: center;
+        
+        }
+      }
+
+      .content {
+        ul {
+          li {
+            
+  
+            span {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+            i {
+              color: #00796B;
+              font-size: 30px;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+
+  .contact{
+    .contact-content-wrapper{
+      .heading{
+        h1{
+          font-size: 2rem;
+        }
+      }
+    }
+  }
 }
