@@ -122,43 +122,38 @@
     }
   }
 
-  .pricing{
-    .price-content-wrapper{
+  .pricing {
+    .price-content-wrapper {
       padding: 10vh 5vh;
 
       .heading {
-
-        h1{
+        h1 {
           font-size: 2rem;
           text-align: center;
-        
         }
       }
 
       .content {
         ul {
           li {
-            
-  
             span {
               font-size: 1rem;
               font-weight: 600;
             }
             i {
-              color: #00796B;
+              color: #00796b;
               font-size: 30px;
             }
-            
           }
         }
       }
     }
   }
 
-  .contact{
-    .contact-content-wrapper{
-      .heading{
-        h1{
+  .contact {
+    .contact-content-wrapper {
+      .heading {
+        h1 {
           font-size: 2rem;
         }
       }
@@ -166,9 +161,17 @@
   }
 
   .area-cover {
-    
+    .heading {
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    .tabs .tab a {
+      font-size: 14px;
+    }
     .flex-item {
-      
       min-width: 50%;
     }
   }

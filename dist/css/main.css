@@ -168,7 +168,7 @@
 }
 
 .hero h1::before, .hero h1::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   height: 100%;
@@ -241,6 +241,7 @@
 }
 
 .pricing {
+  z-index: 0;
   padding: 2vh 1vh;
 }
 
@@ -301,6 +302,27 @@
   color: #00796B;
 }
 
+.area-cover .heading {
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.area-cover .heading::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  border-bottom: 5px solid #000;
+  width: 40%;
+}
+
+.area-cover .heading h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .area-cover .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +342,8 @@
 .area-cover .tabs .tab a {
   color: #00796b;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-top: -10px;
+  text-transform: capitalize;
 }
 
 .area-cover .tabs .indicator {
@@ -365,6 +388,22 @@
 
 .contact .form-wrapper {
   padding: 5vh;
+}
+
+.footer {
+  padding: 1vh;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+}
+
+.footer p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -506,11 +545,19 @@
     font-weight: 600;
   }
   .pricing .price-content-wrapper .content ul li i {
-    color: #00796B;
+    color: #00796b;
     font-size: 30px;
   }
   .contact .contact-content-wrapper .heading h1 {
     font-size: 2rem;
+  }
+  .area-cover .heading h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .area-cover .tabs .tab a {
+    font-size: 14px;
   }
   .area-cover .flex-item {
     min-width: 50%;
