@@ -102,8 +102,22 @@
       //   flex-direction: column;
       p {
         padding: 15px 5px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 400;
+      }
+    }
+  }
+  .about {
+    padding: 5vh 2vh;
+
+    .about-content-wrapper {
+      background: rgba(0, 0, 0, 0.7);
+      .heading {
+        font-size: 2rem;
+
+        h1 {
+          font-size: 2rem;
+        }
       }
     }
   }

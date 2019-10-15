@@ -127,7 +127,7 @@
 
 .main-header.scrolled {
   height: 50px;
-  background: rgba(21, 101, 192, 0.9);
+  background: rgba(0, 121, 107, 0.9);
   color: #fff;
 }
 
@@ -219,7 +219,7 @@
 }
 
 .about {
-  padding: 10vh;
+  padding: 10vh 5vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/about-bg.jpg") no-repeat center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/about-bg.jpg") no-repeat center;
   background-size: cover;
@@ -261,6 +261,63 @@
   margin: 20px 0;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.pricing .price-content-wrapper {
+  padding: 10vh 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing .price-content-wrapper .heading {
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.pricing .price-content-wrapper .heading::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  border-bottom: 5px solid #000;
+  width: 40%;
+}
+
+.pricing .price-content-wrapper .heading h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pricing .price-content-wrapper .content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.pricing .price-content-wrapper .content ul li span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.pricing .price-content-wrapper .content ul li i {
+  color: #00796B;
+}
+
+.pricing .price-content-wrapper .content ul li .rate {
+  color: #00796B;
 }
 
 @media screen and (max-width: 767px) {
@@ -375,8 +432,20 @@
   }
   .services .new-item p {
     padding: 15px 5px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
+  }
+  .about {
+    padding: 5vh 2vh;
+  }
+  .about .about-content-wrapper {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .about .about-content-wrapper .heading {
+    font-size: 2rem;
+  }
+  .about .about-content-wrapper .heading h1 {
+    font-size: 2rem;
   }
 }
 
