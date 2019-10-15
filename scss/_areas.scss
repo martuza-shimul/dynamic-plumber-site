@@ -1,0 +1,21 @@
+.area-cover {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .flex-item {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .tabs .tab a {
+    color: #00796b;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .tabs .indicator {
+    height: 3px;
+    background-color: #00796b;
+  }
+}

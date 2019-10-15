@@ -81,7 +81,7 @@
 .main-header .menu-icon_line {
   display: block;
   position: relative;
-  background: #000;
+  background: #fff;
   height: 2px;
   width: 20px;
   border-radius: 4px;
@@ -95,7 +95,7 @@
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  background: #000;
+  background: #fff;
   -webkit-transition: background .8s ease;
   transition: background .8s ease;
 }
@@ -240,6 +240,10 @@
   font-weight: 500;
 }
 
+.pricing {
+  padding: 2vh 1vh;
+}
+
 .pricing .price-content-wrapper {
   padding: 10vh 2vh;
   display: -ms-grid;
@@ -295,6 +299,33 @@
 
 .pricing .price-content-wrapper .content ul li .rate {
   color: #00796B;
+}
+
+.area-cover .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.area-cover .flex-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 150px;
+}
+
+.area-cover .tabs .tab a {
+  color: #00796b;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.area-cover .tabs .indicator {
+  height: 3px;
+  background-color: #00796b;
 }
 
 .contact {
@@ -480,6 +511,9 @@
   }
   .contact .contact-content-wrapper .heading h1 {
     font-size: 2rem;
+  }
+  .area-cover .flex-item {
+    min-width: 50%;
   }
 }
 
