@@ -1,11 +1,28 @@
 .footer {
   padding: 1vh;
   color: #fff;
-  display: grid;
+  // display: grid;
 
-  p {
-    align-self: center;
-    justify-self: center;
-    font-size: 0.8rem;
+  .row{
+    margin: 5px;
+    .content{
+      display: flex;
+      // flex-direction: column;
+      justify-content: space-between;
+
+      .location{
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        span{
+          margin-left: 10px;
+        }
+
+      }
+    }
   }
+
+  
 }

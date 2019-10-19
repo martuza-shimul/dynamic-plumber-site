@@ -4,20 +4,12 @@
 
   .heading {
     // background: coral;
-    padding: 1rem;
-    position: relative;
-    margin-bottom: 50px;
-    font-size: 4rem;
-    font-weight: 700;
-    text-transform: uppercase;
 
     &::after {
-      content: "";
-      position: absolute;
-      left: 45%;
+      left: 40%;
       bottom: 0;
-      border-bottom: 5px solid #000;
-      width: 10%;
+
+      width: 20%;
     }
   }
   .new-item {

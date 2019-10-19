@@ -1,4 +1,8 @@
 @media screen and (max-width: 767px) {
+  .main-wrapper {
+    width: 100vw;
+    box-sizing: border-box;
+  }
   .main-header {
     .menu-icon {
       display: block;
@@ -95,6 +99,12 @@
   .hero h1 {
     font-size: 2rem;
   }
+  .heading {
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
   .services {
     .new-item {
       //   box-sizing: border-box;
@@ -112,11 +122,11 @@
 
     .about-content-wrapper {
       background: rgba(0, 0, 0, 0.7);
-      .heading {
-        font-size: 2rem;
 
-        h1 {
-          font-size: 2rem;
+      .heading {
+        &::after {
+          left: 40%;
+          width: 20%;
         }
       }
     }
@@ -125,13 +135,6 @@
   .pricing {
     .price-content-wrapper {
       padding: 10vh 5vh;
-
-      .heading {
-        h1 {
-          font-size: 2rem;
-          text-align: center;
-        }
-      }
 
       .content {
         ul {
@@ -153,8 +156,16 @@
   .contact {
     .contact-content-wrapper {
       .heading {
+        // background: coral;
+
+        &::after {
+          left: 40%;
+          bottom: 0;
+
+          width: 20%;
+        }
         h1 {
-          font-size: 2rem;
+          color: #fff;
         }
       }
     }
@@ -162,10 +173,9 @@
 
   .area-cover {
     .heading {
-      h1 {
-        font-size: 2rem;
-        font-weight: 700;
-        text-transform: uppercase;
+      &::after {
+        left: 40%;
+        width: 20%;
       }
     }
     .tabs .tab a {
@@ -174,5 +184,29 @@
     .flex-item {
       min-width: 50%;
     }
+  }
+
+  .footer {
+    padding: 1vh;
+    color: #fff;
+    // display: grid;
+  
+    .row{
+      margin: 5px;
+      .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+  
+        .copy {
+          
+          font-size: 0.8rem;
+          
+        }
+      }
+    }
+  
+    
   }
 }

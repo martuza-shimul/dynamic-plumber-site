@@ -1,23 +1,9 @@
 .area-cover {
   .heading {
-    // background: coral;
-    padding: 1rem;
-    position: relative;
-    margin-bottom: 50px;
-
-    &::after {
-      content: "";
-      position: absolute;
+    &::after {  
       left: 30%;
-      bottom: 0;
-      border-bottom: 5px solid #000;
       width: 40%;
-    }
-    h1 {
-      font-size: 4rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+    } 
   }
   .flex-container {
     display: flex;

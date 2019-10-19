@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import "global";
 @import "header";
 @import "hero";
 @import "services";
@@ -16,13 +17,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
-  // background: aliceblue;
+  // background: #BDCCD3;
 }
 
 .owl-carousel {
@@ -35,4 +35,8 @@ body {
 //     p{
 //         margin: 1rem 0;
 //     }
+// }
+// .main-wrapper {
+//   width: 100vw;
+//   box-sizing: border-box;
 // }

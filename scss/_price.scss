@@ -1,8 +1,8 @@
 .pricing {
     z-index: 0;
-    padding: 2vh 1vh;
+    // padding: 2vh 1vh;
   .price-content-wrapper {
-    padding: 10vh 2vh;
+    padding: 5vh 2vh;
     //   background: chocolate;
     display: grid;
     justify-content: space-around;
@@ -10,24 +10,14 @@
     align-items: center;
 
     .heading {
-      // background: coral;
-      padding: 1rem;
-      position: relative;
-      margin-bottom: 50px;
+     
 
       &::after {
-        content: "";
-        position: absolute;
         left: 30%;
         bottom: 0;
-        border-bottom: 5px solid #000;
         width: 40%;
       }
-      h1 {
-        font-size: 4rem;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
+      
     }
     .content {
       ul {
@@ -50,7 +40,7 @@
         }
       }
       p{
-        margin-top: 20px;
+        margin-top: 5%;
       }
     }
   }
