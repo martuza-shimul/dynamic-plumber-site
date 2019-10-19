@@ -150,6 +150,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -161,6 +165,7 @@
   position: relative;
   font-size: 4rem;
   text-transform: uppercase;
+  font-weight: 900;
   text-align: center;
   background: rgba(0, 0, 0, 0.2);
   padding: 2rem;
@@ -185,8 +190,22 @@
   border-top: 6px solid #000;
 }
 
-.services {
-  background: aliceblue;
+.services .heading {
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services .heading::after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  border-bottom: 5px solid #000;
+  width: 10%;
 }
 
 .services .new-item p {
@@ -300,6 +319,10 @@
 
 .pricing .price-content-wrapper .content ul li .rate {
   color: #00796B;
+}
+
+.pricing .price-content-wrapper .content p {
+  margin-top: 20px;
 }
 
 .area-cover .heading {
