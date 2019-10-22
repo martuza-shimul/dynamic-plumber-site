@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: 85px;
   width: 100vw;
   padding: 0 10vh;
   color: #fff;
@@ -42,6 +42,9 @@
       }
       &:nth-of-type(4) {
         transition-delay: 0.3s;
+      }
+      &:nth-of-type(5) {
+        transition-delay: 0.4s;
       }
       a {
         margin: 0.2rem;
@@ -108,8 +111,9 @@
   }
 
   &.scrolled {
-    height: 60px;
-    background: rgba(0, 121, 107, 0.9);
+    height: 65px;
+    // background: rgba(0, 115, 188, 0.9);
+    background: rgba($primary-color, 0.8);
     color: #fff;
     .logo {
       a:first-child {

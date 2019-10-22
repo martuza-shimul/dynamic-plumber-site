@@ -33,7 +33,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 75px;
+  height: 85px;
   width: 100vw;
   padding: 0 10vh;
   color: #fff;
@@ -85,6 +85,11 @@
 .main-header .nav-links .nav-link:nth-of-type(4) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
+}
+
+.main-header .nav-links .nav-link:nth-of-type(5) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .main-header .nav-links .nav-link a {
@@ -154,8 +159,8 @@
 }
 
 .main-header.scrolled {
-  height: 60px;
-  background: rgba(0, 121, 107, 0.9);
+  height: 65px;
+  background: rgba(0, 115, 188, 0.8);
   color: #fff;
 }
 
@@ -224,6 +229,13 @@
 
 .hero button {
   border-radius: 15px 0;
+  background: #0073bc;
+}
+
+.hero button:hover {
+  background: aliceblue;
+  color: #0073bc;
+  font-weight: 700;
 }
 
 .services .heading::after {
@@ -233,6 +245,7 @@
 }
 
 .services .new-item p {
+  background: #0073bc;
   padding: 20px 10px;
   font-size: 1.35rem;
   font-weight: 500;
@@ -243,11 +256,11 @@
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/about-bg.jpg") no-repeat center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/about-bg.jpg") no-repeat center;
   background-size: cover;
-  color: #fff;
+  color: aliceblue;
 }
 
 .about .about-content-wrapper {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 115, 188, 0.7);
   padding: 30px;
   border-radius: 10% 0;
 }
@@ -278,6 +291,7 @@
 }
 
 .contact-banner {
+  background: #0073bc;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,25 +332,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
 }
 
-.pricing .price-content-wrapper .content ul li span {
+.pricing .price-content-wrapper .content ul li p {
   font-size: 2rem;
   font-weight: 600;
 }
 
 .pricing .price-content-wrapper .content ul li i {
-  color: #00796B;
+  color: #0073bc;
 }
 
 .pricing .price-content-wrapper .content ul li .rate {
-  color: #00796B;
+  color: #0073bc;
 }
 
 .pricing .price-content-wrapper .content p {
@@ -365,7 +380,7 @@
 }
 
 .area-cover .tabs .tab a {
-  color: #00796b;
+  color: #0073bc;
   font-size: 20px;
   margin-top: -10px;
   text-transform: capitalize;
@@ -373,7 +388,7 @@
 
 .area-cover .tabs .indicator {
   height: 3px;
-  background-color: #00796b;
+  background-color: #0073bc;
 }
 
 .contact {
@@ -381,7 +396,7 @@
 }
 
 .contact .contact-content-wrapper {
-  background: #00796B;
+  background: #0073bc;
   padding: 5vh;
 }
 
@@ -404,7 +419,26 @@
   padding: 5vh;
 }
 
+.contact .form-wrapper input[type="text"]:not(.browser-default):focus:not([readonly]),
+.contact .form-wrapper input[type="email"]:not(.browser-default):focus:not([readonly]),
+.contact .form-wrapper textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #0073bc;
+  -webkit-box-shadow: 0 1px 0 0 #0073bc;
+          box-shadow: 0 1px 0 0 #0073bc;
+}
+
+.contact .form-wrapper input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+.contact .form-wrapper input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+.contact .form-wrapper textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #0073bc;
+}
+
+.contact .form-wrapper button {
+  background: #0073bc;
+}
+
 .footer {
+  background: #0073bc;
   padding: 1vh;
   color: #fff;
 }
@@ -529,6 +563,10 @@
     -webkit-transition-delay: 1s;
             transition-delay: 1s;
   }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(5) {
+    -webkit-transition-delay: 1.1s;
+            transition-delay: 1.1s;
+  }
   .main-header .menu-btn:checked ~ .menu-icon {
     border-radius: 50%;
     -webkit-animation: pulse 1s;
@@ -577,12 +615,12 @@
   .pricing .price-content-wrapper {
     padding: 10vh 5vh;
   }
-  .pricing .price-content-wrapper .content ul li span {
+  .pricing .price-content-wrapper .content ul li p {
     font-size: 1rem;
     font-weight: 600;
   }
   .pricing .price-content-wrapper .content ul li i {
-    color: #00796b;
+    color: #0073bc;
     font-size: 30px;
   }
   .contact .contact-content-wrapper .heading::after {

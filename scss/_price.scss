@@ -23,19 +23,21 @@
       ul {
         li {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           align-items: center;
           margin-top: 10px;
 
-          span {
+          p {
             font-size: 2rem;
             font-weight: 600;
+            
           }
           i {
-            color: #00796B;
+            color: $primary-color;
           }
           .rate {
-            color: #00796B;
+            color: $primary-color;
+            
           }
         }
       }

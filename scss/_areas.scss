@@ -16,13 +16,13 @@
   }
 
   .tabs .tab a {
-    color: #00796b;
+    color: $primary-color;
     font-size: 20px;
     margin-top: -10px;
     text-transform: capitalize;
   }
   .tabs .indicator {
     height: 3px;
-    background-color: #00796b;
+    background-color: $primary-color;
   }
 }

@@ -13,19 +13,8 @@
     }
   }
   .new-item {
-    // box-sizing: border-box;
-    // display: grid;
-    // justify-content: stretch;
-    // align-content: stretch;
-    // justify-items: stretch;
-    // align-items: stretch;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 1fr;
-    // grid-template-areas:
-    // "image"
-    // "para";
-
     p {
+      background: $primary-color;
       padding: 20px 10px;
       font-size: 1.35rem;
       font-weight: 500;

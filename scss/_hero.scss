@@ -39,5 +39,12 @@
   }
   button{
     border-radius: 15px 0;
+    background: $primary-color;
+
+    &:hover{
+      background: aliceblue;
+      color: $primary-color;
+      font-weight: 700;
+    }
   }
 }
