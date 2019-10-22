@@ -46,6 +46,14 @@
   border-radius: 10px 0;
   padding: 7px;
   font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-header .logo a:last-child {
@@ -441,6 +449,9 @@
   background: #0073bc;
   padding: 1vh;
   color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100vw;
 }
 
 .footer .row {
@@ -587,8 +598,14 @@
     -webkit-animation: openBtm 0.8s forwards;
             animation: openBtm 0.8s forwards;
   }
+  .hero {
+    z-index: 0;
+  }
   .hero h1 {
     font-size: 2rem;
+  }
+  .hero button {
+    z-index: 0;
   }
   .heading h1 {
     font-size: 2rem;
