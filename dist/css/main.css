@@ -57,7 +57,7 @@
 }
 
 .main-header .logo a:last-child {
-  visibility: hidden;
+  display: none;
 }
 
 .main-header a {
@@ -177,7 +177,7 @@
 }
 
 .main-header.scrolled .logo a:last-child {
-  visibility: visible;
+  display: initial;
 }
 
 .main-header.scrolled .menu-icon_line, .main-header.scrolled .menu-icon_line::before, .main-header.scrolled .menu-icon_line::after {
