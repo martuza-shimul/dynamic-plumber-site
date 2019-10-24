@@ -1,0 +1,27 @@
+.sticky-mobile {
+  background: $primary-dark;
+  color: $text-color;
+  width: 100vw;
+  max-height: 53px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  .row {
+    margin-bottom: 0;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding: 10px 0;
+
+      a {
+        color: $text-color;
+      }
+    }
+  }
+}

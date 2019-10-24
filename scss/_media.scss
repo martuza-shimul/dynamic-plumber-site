@@ -220,6 +220,14 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-bottom: 53px;
+    
+  }
+}
+
 @media screen and (max-width: 450px) {
   .contact-banner {
     h3 {
