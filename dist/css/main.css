@@ -482,6 +482,19 @@
   margin-left: 10px;
 }
 
+.footer .row .content .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .row .content .links a {
+  margin-left: 10px;
+}
+
 .sticky-mobile {
   background: #00AEEF;
   color: #000;
@@ -490,6 +503,7 @@
   position: fixed;
   left: 0;
   bottom: 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .sticky-mobile .row {
@@ -514,6 +528,45 @@
 
 .sticky-mobile .row p a {
   color: #000;
+}
+
+.page-header {
+  height: 30vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url("../img/hero-image.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../img/hero-image.jpg") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10vw;
+  color: #fff;
+}
+
+.privacy {
+  margin-top: 30px;
+}
+
+.privacy ul {
+  list-style: initial;
+  margin-left: 20px;
+}
+
+.privacy ul li {
+  list-style-type: square;
+}
+
+.privacy strong {
+  font-weight: 600;
 }
 
 @media screen and (max-width: 767px) {
