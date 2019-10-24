@@ -27,7 +27,7 @@ mail($to,$email_subject,$email_body,$headers);
 
 // echo "<h4>The details have been sent and a member of staff will be in touch shortly!</h4>";
 // header("Location: index.html")	;
-header("Location: index.html");
+header("Location: thank-you.html");
 return true;	
 
 ?>
