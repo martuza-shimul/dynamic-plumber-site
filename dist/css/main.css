@@ -443,6 +443,7 @@
 
 .contact .form-wrapper button {
   background: #0073bc;
+  z-index: 0;
 }
 
 .footer {
@@ -462,9 +463,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footer .row .content .location {
