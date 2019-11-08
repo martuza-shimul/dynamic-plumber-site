@@ -35,3 +35,34 @@ $(document).ready(function() {
     // nav: true
   });
 });
+
+const qepath = document.querySelector(".quote-engine-wrapper .first");
+const qepathSecond = document.querySelector(".quote-engine-wrapper .second");
+const qepathType = document.querySelector(".quote-engine-wrapper .type");
+const qepathThird = document.querySelector(".quote-engine-wrapper .third");
+const qepathFourth = document.querySelector(".quote-engine-wrapper .fourth");
+const qepathLast = document.querySelector(".quote-engine-wrapper .last");
+// let lists = document.querySelectorAll(".first-wrapper .first input");
+
+const handleRadioClick = () => {
+  qepath.classList.add("hide");
+  qepathSecond.classList.remove("hide");
+};
+
+const handleSecond = () => {
+  // e.preventDefault();
+  qepathSecond.classList.add("hide");
+  qepathType.classList.remove("hide");
+};
+const handleType = () => {
+  qepathType.classList.add("hide");
+  qepathThird.classList.remove("hide");
+};
+const handleThird = () => {
+  qepathThird.classList.add("hide");
+  qepathFourth.classList.remove("hide");
+};
+const handleFourth = () => {
+  qepathFourth.classList.add("hide");
+  qepathLast.classList.remove("hide");
+};

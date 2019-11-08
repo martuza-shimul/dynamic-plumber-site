@@ -23,8 +23,7 @@
     }
   }
 
-  .form-wrapper {
-    padding: 5vh;
+  
 
     // label.active{
     //   color: $primary-color;
@@ -32,7 +31,18 @@
     // .input-field input:active>label{
     //   color: $primary-color;
     // }
-    input[type="text"]:not(.browser-default):focus:not([readonly]),
+    
+
+    .form-wrapper {
+      padding: 5vh;
+
+    button {
+      background: $primary-color;
+      z-index: 0;
+    }
+  }
+}
+input[type="text"]:not(.browser-default):focus:not([readonly]),
     input[type="email"]:not(.browser-default):focus:not([readonly]),
     textarea.materialize-textarea:focus:not([readonly]) {
       border-bottom: 1px solid $primary-color;
@@ -45,10 +55,3 @@
     textarea.materialize-textarea:focus:not([readonly])+label{
       color: $primary-color;
     }
-
-    button {
-      background: $primary-color;
-      z-index: 0;
-    }
-  }
-}

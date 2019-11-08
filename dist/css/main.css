@@ -427,23 +427,23 @@
   padding: 5vh;
 }
 
-.contact .form-wrapper input[type="text"]:not(.browser-default):focus:not([readonly]),
-.contact .form-wrapper input[type="email"]:not(.browser-default):focus:not([readonly]),
-.contact .form-wrapper textarea.materialize-textarea:focus:not([readonly]) {
+.contact .form-wrapper button {
+  background: #0073bc;
+  z-index: 0;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #0073bc;
   -webkit-box-shadow: 0 1px 0 0 #0073bc;
           box-shadow: 0 1px 0 0 #0073bc;
 }
 
-.contact .form-wrapper input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
-.contact .form-wrapper input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
-.contact .form-wrapper textarea.materialize-textarea:focus:not([readonly]) + label {
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #0073bc;
-}
-
-.contact .form-wrapper button {
-  background: #0073bc;
-  z-index: 0;
 }
 
 .footer {
@@ -971,6 +971,82 @@
   .contact-banner h3 {
     font-size: 1.3rem;
   }
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: #0073bc;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid #0073bc;
+}
+
+[type="radio"]:not(:checked) + span,
+[type="radio"]:checked + span,
+[type="checkbox"] + span:not(.lever) {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  color: #525050;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+  border-right: 2px solid #0073bc;
+  border-bottom: 2px solid #0073bc;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.modal {
+  background-color: aliceblue;
+  max-height: 80%;
+}
+
+.modal .modal-footer {
+  background-color: #0073bc;
+}
+
+.modal .modal-footer button {
+  background-color: aliceblue;
+  border-radius: 5px 0;
+}
+
+.modal .modal-footer button i {
+  color: #0073bc;
+  font-size: 2rem;
+}
+
+.modal-content h5 {
+  font-weight: 700;
+  color: #000;
+}
+
+.modal-content p {
+  line-height: 2rem;
+}
+
+.modal-content .quote-engine-wrapper button {
+  border-radius: 7px 0;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.modal-content .quote-engine-wrapper .submit input {
+  background: #0073bc;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  color: #f2f2f2;
+  text-transform: uppercase;
 }
 
 *,
